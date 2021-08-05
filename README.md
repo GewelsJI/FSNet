@@ -9,14 +9,14 @@
 
 > The codes and results will be released in the near future due to some restrictions of patent application.
 
-# Introduction
+# 1. News
+
+# 2. Introduction
 
 Appearance and motion are two important sources of information in video object segmentation (VOS). Previous methods mainly focus on using simplex solutions, lowering the upper bound of feature collaboration among and across these two cues. In this paper, we study a novel framework, termed the FSNet (Full-duplex Strategy Network), which designs a relational cross-attention module (RCAM) to achieve the bidirectional message propagation across embedding subspaces. 
 Furthermore, the bidirectional purification module (BPM) is introduced to update the inconsistent features between the spatial-temporal embeddings, effectively improving the model robustness. By considering the mutual restraint within the full-duplex strategy, our FSNet performs the cross-modal feature-passing (i.e., transmission and receiving) simultaneously before the fusion and decoding stage, making it robust to various challenging scenarios (e.g., motion blur, occlusion) in VOS. Extensive experiments on five popular benchmarks (i.e., DAVIS16, FBMS, MCL, SegTrack-V2, and DAVSOD19) show that our FSNet outperforms other state-of-the-arts for both the VOS and video salient object detection tasks.
 
-# Usage
-
-# Benchmark
+# 3. Benchmark
 
 ## U-VOS task
 
@@ -26,7 +26,7 @@ We use the standard evaluation toolbox from [DAVIS16](https://github.com/davisvi
 
 We use the standard evaluation toolbox from [DAVSOD benchmark](https://github.com/DengPingFan/DAVSOD).
 
-# Ciatation
+# 4. Ciatation
 
     @inproceedings{ji2021FSNet,
       title={Full-Duplex Strategy for Video Object Segmentation},
