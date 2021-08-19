@@ -1,5 +1,7 @@
 # Full-Duplex Strategy for Video Object Segmentation (ICCV, 2021)
 
+<img align="right" src="./assets/quantitative.png" width="350px" />
+
 [Ge-Peng Ji](https://scholar.google.com/citations?user=oaxKYKUAAAAJ&hl=en), 
 [Keren Fu](http://www.kerenfu.top/), 
 [Zhe Wu](https://scholar.google.com/citations?hl=en&user=jT1s8GkAAAAJ), 
@@ -7,25 +9,76 @@
 [Jianbing Shen](https://scholar.google.com/citations?hl=en&user=_Q3NTToAAAAJ), &
 [Ling Shao](https://scholar.google.com/citations?user=z84rLjoAAAAJ&hl=en&oi=ao)
 
-> The codes and results will be released in the near future due to some restrictions of patent application.
+- This repository provides code for paper "_**Full-Duplex Strategy for Video Object Segmentation**_" accepted by the ICCV-2021 conference ([arXiv Version](https://arxiv.org/abs/2105.08468)). 
+
+- This project is under construction. If you have any questions about our paper, feel free to contact me.
+
+- If you like our FSNet for your personal research, please cite this paper ([BibTeX](#4-citation)).
 
 # 1. News
 
+> Warning: The whole codes will be released in the near future due to some restrictions of patent application.
+
+- [2021/08/20] Release inference code, evaluation code (VSOD), and precomputed results.
+- [2021/07/20] Create github page.
+
 # 2. Introduction
 
-Appearance and motion are two important sources of information in video object segmentation (VOS). Previous methods mainly focus on using simplex solutions, lowering the upper bound of feature collaboration among and across these two cues. In this paper, we study a novel framework, termed the FSNet (Full-duplex Strategy Network), which designs a relational cross-attention module (RCAM) to achieve the bidirectional message propagation across embedding subspaces. 
-Furthermore, the bidirectional purification module (BPM) is introduced to update the inconsistent features between the spatial-temporal embeddings, effectively improving the model robustness. By considering the mutual restraint within the full-duplex strategy, our FSNet performs the cross-modal feature-passing (i.e., transmission and receiving) simultaneously before the fusion and decoding stage, making it robust to various challenging scenarios (e.g., motion blur, occlusion) in VOS. Extensive experiments on five popular benchmarks (i.e., DAVIS16, FBMS, MCL, SegTrack-V2, and DAVSOD19) show that our FSNet outperforms other state-of-the-arts for both the VOS and video salient object detection tasks.
+- **Why?**: Appearance and motion are two important sources of information in video object segmentation (VOS). Previous methods mainly focus on using simplex solutions, lowering the upper bound of feature collaboration among and across these two cues.
 
-# 3. Benchmark
+<p align="center">
+    <img src="./assets/motivation.jpg" width="450px"/> <br />
+    <em> 
+    Figure 1: Visual comparison between the simplex (i.e., (a) appearance-refined motion and (b) motion-refined appear- ance) and our full-duplex strategy. In contrast, our FS- Net offers a collaborative way to leverage the appearance and motion cues under the mutual restraint of full-duplex strategy, thus providing more accurate structure details and alleviating the short-term feature drifting issue.
+    </em>
+</p>
+
+- **What?**: In this paper, we study a novel framework, termed the FSNet (Full-duplex Strategy Network), which designs a relational cross-attention module (RCAM) to achieve the bidirectional message propagation across embedding subspaces. Furthermore, the bidirectional purification module (BPM) is introduced to update the inconsistent features between the spatial-temporal embeddings, effectively improving the model robustness. 
+
+<p align="center">
+    <img src="./assets/framework.jpg" /> <br />
+    <em> 
+    Figure 2: The pipeline of our FSNet. The Relational Cross-Attention Module (RCAM) abstracts more discriminative representations between the motion and appearance cues using the full-duplex strategy. Then four Bidirectional Purification Modules (BPM) are stacked to further re-calibrate inconsistencies between the motion and appearance features. Finally, we utilize the decoder to generate our prediction.
+    </em>
+</p>
+
+- **How?**: By considering the mutual restraint within the full-duplex strategy, our FSNet performs the cross-modal feature-passing (i.e., transmission and receiving) simultaneously before the fusion and decoding stage, making it robust to various challenging scenarios (e.g., motion blur, occlusion) in VOS. Extensive experiments on five popular benchmarks (i.e., DAVIS16, FBMS, MCL, SegTrack-V2, and DAVSOD19) show that our FSNet outperforms other state-of-the-arts for both the VOS and video salient object detection tasks.
+
+<p align="center">
+    <img src="./assets/qualitative.png" /> <br />
+    <em> 
+    Figure 3:  Qualitative results on five datasets, including DAVIS16, MCL, FBMS, SegTrack-V2, and DAVSOD19.
+    </em>
+</p>
+
+# 3. Inference
+
+- Install necessary libraries: `PyTorch 1.1+`, `scipy 1.2.2`, `PIL`
+
+- Download the pre-trained weights from [Baidu Driver]().
+
+- Just run `python inference.py` to generate the segmentation results. 
+
+# 4. Benchmark
 
 ## U-VOS task
 
-We use the standard evaluation toolbox from [DAVIS16](https://github.com/davisvideochallenge/davis-matlab/tree/davis-2016). All the pre-computed segmentations are downloaded from this [link](https://davischallenge.org/davis2016/soa_compare.html).
+> NOTE: In the U-VOS, all the prediction results are binary. We only adopt the naive binarization algorithm 
+> (i.e., threshold=0.5) in our experiments.
+
+- Pre-Computed Results: Please download the prediction results of all [comptetiors]() and our [FSNet]().
+
+- Evaluation Toolbox: We use the standard evaluation toolbox from [DAVSOD benchmark](https://github.com/DengPingFan/DAVSOD).
 
 ## V-SOD task
 
-We use the standard evaluation toolbox from [DAVSOD benchmark](https://github.com/DengPingFan/DAVSOD).
+> NOTE: In the U-VOS, all the prediction results are non-binary.
 
+- Pre-Computed Results: Please download the prediction results of all [comptetiors]() and our [FSNet]().
+
+- Evaluation Toolbox: We use the standard evaluation toolbox from [DAVIS16](https://github.com/davisvideochallenge/davis-matlab/tree/davis-2016). 
+  (Note that all the pre-computed segmentations are downloaded from this [link](https://davischallenge.org/davis2016/soa_compare.html)).
+  
 # 4. Ciatation
 
     @inproceedings{ji2021FSNet,
@@ -35,3 +88,7 @@ We use the standard evaluation toolbox from [DAVSOD benchmark](https://github.co
       year={2021}
     }
 
+# 5. Acknowledgements
+
+Many thanks to my collaborator [Ph.D. Zhe Wu](https://scholar.google.com/citations?hl=en&user=jT1s8GkAAAAJ), 
+who provides the excellent work [SCRN](https://github.com/wuzhe71/SCRN) and design inspirations.
