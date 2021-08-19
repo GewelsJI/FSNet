@@ -51,13 +51,17 @@
     </em>
 </p>
 
-# 3. Inference
+# 3. Usage
+
+## How to Inference
 
 - Install necessary libraries: `PyTorch 1.1+`, `scipy 1.2.2`, `PIL`
 
 - Download the pre-trained weights from [Baidu Driver]().
 
 - Just run `python inference.py` to generate the segmentation results. 
+
+- About the post-processing technique DenseCRF we used, you can find it here: [DSS-CRF](https://github.com/Andrew-Qibin/dss_crf).
 
 # 4. Benchmark
 
