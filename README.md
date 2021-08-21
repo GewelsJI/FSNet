@@ -78,6 +78,14 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 > NOTE: In the U-VOS, all the prediction results are strictly binary. We only adopt the naive binarization algorithm 
 > (i.e., threshold=0.5) in our experiments.
 
+
+- Quantitative results:
+
+    |       | mean-J | recall-J | decay-J | mean-F | recall-F | decay-F | T     |
+    |-------|--------|----------|---------|--------|----------|---------|-------|
+    | FSNet (w/ CRF) | 0.834  | 0.945    | 0.032   | 0.831  | 0.902    | 0.026   | 0.213 |
+
+
 - Pre-Computed Results: Please download the prediction results of all [comptetiors]() and our [FSNet]().
 
 - Evaluation Toolbox: We use the standard evaluation toolbox from [DAVIS16](https://github.com/davisvideochallenge/davis-matlab/tree/davis-2016). 
