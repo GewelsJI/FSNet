@@ -20,7 +20,8 @@ Authors:
 
 > Warning: The whole codes will be released in the near future due to some restrictions of patent application.
 
-- [2021/08/20] Release inference code, evaluation code (VSOD), and precomputed results.
+- [2021/08/21] The precomputed results and testing datset is coming soon, keep your patience.
+- [2021/08/20] Release inference code, evaluation code (VSOD).
 - [2021/07/20] Create github page.
 
 # 2. Introduction
@@ -72,24 +73,25 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 # 4. Benchmark
 
-## U-VOS task
+## Unsupervised/Zero-shot Video Object Segmentation (U/Z-VOS) task
 
-> NOTE: In the U-VOS, all the prediction results are binary. We only adopt the naive binarization algorithm 
+> NOTE: In the U-VOS, all the prediction results are strictly binary. We only adopt the naive binarization algorithm 
 > (i.e., threshold=0.5) in our experiments.
-
-- Pre-Computed Results: Please download the prediction results of all [comptetiors]() and our [FSNet]().
-
-- Evaluation Toolbox: We use the standard evaluation toolbox from [DAVSOD benchmark](https://github.com/DengPingFan/DAVSOD).
-
-## V-SOD task
-
-> NOTE: In the U-VOS, all the prediction results are non-binary.
 
 - Pre-Computed Results: Please download the prediction results of all [comptetiors]() and our [FSNet]().
 
 - Evaluation Toolbox: We use the standard evaluation toolbox from [DAVIS16](https://github.com/davisvideochallenge/davis-matlab/tree/davis-2016). 
   (Note that all the pre-computed segmentations are downloaded from this [link](https://davischallenge.org/davis2016/soa_compare.html)).
-  
+
+
+## Video Salient Object Detection (V-SOD) task
+
+> NOTE: In the V-SOD, all the prediction results are non-binary.
+
+- Pre-Computed Results: Please download the prediction results of all [comptetiors]() and our [FSNet]().
+
+- Evaluation Toolbox: We use the standard evaluation toolbox from [DAVSOD benchmark](https://github.com/DengPingFan/DAVSOD).
+
 # 4. Ciatation
 
     @inproceedings{ji2021FSNet,
