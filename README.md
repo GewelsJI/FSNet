@@ -20,7 +20,7 @@ Authors:
 
 > Warning: The whole codes will be released in the near future due to some restrictions of patent application.
 
-- [2021/08/21] The precomputed results and testing datset is coming soon, and thus, some link maybe invalid. Please keep your patience.
+- [2021/08/21] The precomputed results and testing datset is coming soon, and thus, some links maybe invalid. Please keep your patience.
 - [2021/08/20] Release inference code, evaluation code (VSOD).
 - [2021/07/20] Create github page.
 
