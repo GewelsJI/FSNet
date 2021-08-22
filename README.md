@@ -18,9 +18,9 @@ Authors:
 
 # 1. News
 
-> Warning: The whole codes will be released in the near future due to some restrictions of patent application.
+> Warning: The precomputed results and testing datset is coming soon, and thus, some links maybe invalid. Please keep your patience.
 
-- [2021/08/21] The precomputed results and testing datset is coming soon, and thus, some links maybe invalid. Please keep your patience.
+- [2021/08/22] Upload the pre-trained snapshot and the pre-computed results on U-VOS and V-SOD tasks. 
 - [2021/08/20] Release inference code, evaluation code (VSOD).
 - [2021/07/20] Create github page.
 
