@@ -65,7 +65,8 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 - Install necessary libraries: `PyTorch 1.1+`, `scipy 1.2.2`, `PIL`
 
-- Download the pre-trained weights from [Baidu Driver](https://pan.baidu.com/s/1GRUg-n1EEV_nku-2nG3QRw) (psw: 36lm).
+- Download the pre-trained weights from [Baidu Driver](https://pan.baidu.com/s/1GRUg-n1EEV_nku-2nG3QRw) (psw: 36lm). 
+  Saving the pre-trained weights at `./snapshot/FSNet/2021-ICCV-FSNet-20epoch-new.pth`
 
 - Just run `python inference.py` to generate the segmentation results. 
 
