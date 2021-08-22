@@ -65,7 +65,7 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 - Install necessary libraries: `PyTorch 1.1+`, `scipy 1.2.2`, `PIL`
 
-- Download the pre-trained weights from [Baidu Driver]().
+- Download the pre-trained weights from [Baidu Driver](https://pan.baidu.com/s/1GRUg-n1EEV_nku-2nG3QRw) (psw: 36lm).
 
 - Just run `python inference.py` to generate the segmentation results. 
 
@@ -85,8 +85,7 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
     |-------|--------|----------|---------|--------|----------|---------|-------|
     | FSNet (w/ CRF) | 0.834  | 0.945    | 0.032   | 0.831  | 0.902    | 0.026   | 0.213 |
 
-
-- Pre-Computed Results: Please download the prediction results of all [comptetiors]() and our [FSNet]().
+- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/12fvRu-_Ca9qzYJVnmcucKA), psw: ojsl).
 
 - Evaluation Toolbox: We use the standard evaluation toolbox from [DAVIS16](https://github.com/davisvideochallenge/davis-matlab/tree/davis-2016). 
   (Note that all the pre-computed segmentations are downloaded from this [link](https://davischallenge.org/davis2016/soa_compare.html)).
@@ -96,7 +95,7 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 > NOTE: In the V-SOD, all the prediction results are non-binary.
 
-- Pre-Computed Results: Please download the prediction results of all [comptetiors]() and our [FSNet]().
+- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/1xWvuTIXM6YujhYFaWC9hsQ), psw: rgk1).
 
 - Evaluation Toolbox: We use the standard evaluation toolbox from [DAVSOD benchmark](https://github.com/DengPingFan/DAVSOD).
 
