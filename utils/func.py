@@ -32,3 +32,32 @@ class AvgMeter(object):
 
     def show(self):
         return torch.mean(torch.stack(self.losses[np.maximum(len(self.losses)-self.num, 0):]))
+
+
+def update_predict(model):
+    # NOTES: load pretrained model (flow)
+    # ---- copy model-a to model-b ----
+    model_dict = model.state_dict()  # copy base models to the object models
+    state_dict = torch.load('../snapshot/FSNet/2021-ICCV-FSNet_flow-20epoch-new.pth')
+    # ---- for checking state_dict ----
+    # for k, v in state_dict.items():
+    #     print(k, ':', v.min(), v.max())
+    new_state_dict = {k.replace('module.', ''): v for k, v in state_dict.items() if
+                      k.replace('module.', '') in model_dict}
+    model_dict.update(new_state_dict)
+    model.load_state_dict(model_dict)
+
+    # NOTES: load pretrained model (rgb)
+    # ---- copy model-a to model-b ----
+    model_dict = model.state_dict()  # copy base models to the object models
+    state_dict = torch.load('../snapshot/FSNet/2021-ICCV-FSNet_rgb-20epoch-new.pth')
+    new_state_dict = {k: v for k, v in state_dict.items() if k in model_dict}
+    load_keyword_list = ['resnet.conv1', 'resnet.bn1', 'resnet.layer1', 'resnet.layer2', 'resnet.layer3',
+                         'resnet.layer4']
+    for keyword in load_keyword_list:
+        for k, v in state_dict.items():
+            if 'running_mean' not in k and 'running_var' not in k:
+                if keyword in k:
+                    new_state_dict[k.replace(keyword, keyword + '_rgb')] = v
+    model_dict.update(new_state_dict)
+    model.load_state_dict(model_dict)
