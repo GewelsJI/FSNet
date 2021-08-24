@@ -60,7 +60,7 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 # 3. Usage
 
-## How to Inference
+## How to Inference?
 
 - Install necessary libraries: `PyTorch 1.1+`, `scipy 1.2.2`, `PIL`
 
@@ -71,6 +71,19 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 - About the post-processing technique DenseCRF we used, you can find it here: [DSS-CRF](https://github.com/Andrew-Qibin/dss_crf).
 
+## How to train our model from scratch?
+
+Our training pipeline consists of three steps:
+
+- First, train the model using the combination of static SOD dataset (i.e., DUTS) and U-VOS datasets (i.e., DAVIS16 & FBMS).
+    - Set `train_type='pretrain_rgb'` and run `python train.py` in terminal
+
+- Second, train the model using the optical-flow map of U-VOS datasets (i.e., DAVIS16 & FBMS).
+    - Set `train_type='pretrain_flow'` and run `python train.py` in terminal
+    
+- Third, train the model using the pair of frame and optical-flow of U-VOS datasets (i.e., DAVIS16 & FBMS).
+    - Set `train_type='finetune'` and run `python train.py` in terminal
+    
 # 4. Benchmark
 
 ## Unsupervised/Zero-shot Video Object Segmentation (U/Z-VOS) task
