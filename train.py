@@ -112,7 +112,7 @@ def main():
                     format(datetime.now(), epoch, opt.epoch, i, total_step, loss_record1.show(), loss_record2.show()))
 
         os.makedirs(save_path, exist_ok=True)
-        if epoch > 10:
+        if epoch > 15:
             if (epoch+1) % 1 == 0:
                 torch.save(model.state_dict(), save_path + opt.trainset + '-{}epoch.pth'.format(epoch))
                 print('[Model Saved] Path: {}'.format(save_path + opt.trainset + '-{}epoch.pth'.format(epoch)))
