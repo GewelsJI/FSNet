@@ -18,6 +18,7 @@ Authors:
 
 # 1. News
 
+- [2021/08/24] Upload the train script for video object segmentation. (note: traning set is coming soon)
 - [2021/08/22] Upload the pre-trained snapshot and the pre-computed results on U-VOS and V-SOD tasks. 
 - [2021/08/20] Release inference code, evaluation code (VSOD).
 - [2021/07/20] Create github page.
