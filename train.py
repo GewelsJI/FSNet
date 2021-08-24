@@ -27,7 +27,7 @@ def main():
     if opt.train_type == 'finetune':
         save_path = '../snapshot/{}/'.format(opt.trainset)
         # ---- data preparing ----
-        src_dir = '/media/nercms/NERCMS/GepengJi/VSOD/2020-ACMMM/Dataset/train_set_DAVIS_FBMS'
+        src_dir = './dataset/TrainSet_Video'
         image_root = src_dir + '/Imgs/'
         flow_root = src_dir + '/Flow/'
         gt_root = src_dir + '/ground-truth/'
@@ -41,9 +41,9 @@ def main():
     elif opt.train_type == 'pretrain_rgb':
         save_path = '../snapshot/{}_rgb/'.format(opt.trainset)
         # ---- data preparing ----
-        src_dir = '/media/nercms/NERCMS/GepengJi/VSOD/2020-ACMMM/Dataset/train_set_DAVIS_FBMS'
+        src_dir = './data/TrainSet_StaticAndVideo'
         image_root = src_dir + '/Imgs/'
-        gt_root = src_dir + '/ground-truth/'
+        gt_root = src_dir + '/GTs/'
 
         train_loader = get_train_loader(image_root=image_root, flow_root=image_root, gt_root=gt_root,
                                         batchsize=opt.batchsize, trainsize=opt.trainsize, shuffle=True,
@@ -52,7 +52,7 @@ def main():
     elif opt.train_type == 'pretrain_flow':
         save_path = '../snapshot/{}_flow/'.format(opt.trainset)
         # ---- data preparing ----
-        src_dir = '/media/nercms/NERCMS/GepengJi/VSOD/2020-ACMMM/Dataset/train_set_DAVIS_FBMS'
+        src_dir = './dataset/TrainSet_Video'
         flow_root = src_dir + '/Flow/'
         gt_root = src_dir + '/ground-truth/'
 

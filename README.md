@@ -62,6 +62,8 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 ## How to Inference?
 
+- Download the test dataset from [Baidu Driver]() and save it at `./dataset/*`..
+
 - Install necessary libraries: `PyTorch 1.1+`, `scipy 1.2.2`, `PIL`
 
 - Download the pre-trained weights from [Baidu Driver](https://pan.baidu.com/s/1GRUg-n1EEV_nku-2nG3QRw) (psw: 36lm). 
@@ -73,9 +75,9 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 ## How to train our model from scratch?
 
-Our training pipeline consists of three steps:
+Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQsQJL5clty10DbQ) (psw: u01t) and save it at `./dataset/*`. Our training pipeline consists of three steps:
 
-- First, train the model using the combination of static SOD dataset (i.e., DUTS) and U-VOS datasets (i.e., DAVIS16 & FBMS).
+- First, train the model using the combination of static SOD dataset (i.e., DUTS) with 12,926 samples and U-VOS datasets (i.e., DAVIS16 & FBMS) with 2,373 samples.
     - Set `train_type='pretrain_rgb'` and run `python train.py` in terminal
 
 - Second, train the model using the optical-flow map of U-VOS datasets (i.e., DAVIS16 & FBMS).
