@@ -71,20 +71,20 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 - Just run `python inference.py` to generate the segmentation results. 
 
-- About the post-processing technique DenseCRF we used, you can find it here: [DSS-CRF](https://github.com/Andrew-Qibin/dss_crf).
+- About the post-processing technique DenseCRF we used in the original paper, you can find it here: [DSS-CRF](https://github.com/Andrew-Qibin/dss_crf).
 
 ## How to train our model from scratch?
 
 Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQsQJL5clty10DbQ) (psw: u01t) and save it at `./dataset/*`. Our training pipeline consists of three steps:
 
 - First, train the model using the combination of static SOD dataset (i.e., DUTS) with 12,926 samples and U-VOS datasets (i.e., DAVIS16 & FBMS) with 2,373 samples.
-    - Set `train_type='pretrain_rgb'` and run `python train.py` in terminal
+    - Set `--train_type='pretrain_rgb'` and run `python train.py` in terminal
 
 - Second, train the model using the optical-flow map of U-VOS datasets (i.e., DAVIS16 & FBMS).
-    - Set `train_type='pretrain_flow'` and run `python train.py` in terminal
+    - Set `--train_type='pretrain_flow'` and run `python train.py` in terminal
     
 - Third, train the model using the pair of frame and optical-flow of U-VOS datasets (i.e., DAVIS16 & FBMS).
-    - Set `train_type='finetune'` and run `python train.py` in terminal
+    - Set `--train_type='finetune'` and run `python train.py` in terminal
     
 # 4. Benchmark
 
