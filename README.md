@@ -12,13 +12,13 @@ Authors:
 
 - This repository provides code for paper "_**Full-Duplex Strategy for Video Object Segmentation**_" accepted by the ICCV-2021 conference ([arXiv Version](https://arxiv.org/abs/2105.08468)). 
 
-- This project is under construction. If you have any questions about our paper, feel free to contact me.
+- This project is under construction. If you have any questions about our paper or bugs in our git project, feel free to contact me.
 
 - If you like our FSNet for your personal research, please cite this paper ([BibTeX](#4-citation)).
 
 # 1. News
 
-- [2021/08/24] Upload the train script for video object segmentation. (note: traning set is coming soon)
+- [2021/08/24] Upload the train script for video object segmentation.
 - [2021/08/22] Upload the pre-trained snapshot and the pre-computed results on U-VOS and V-SOD tasks. 
 - [2021/08/20] Release inference code, evaluation code (VSOD).
 - [2021/07/20] Create github page.
@@ -62,7 +62,7 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 ## How to Inference?
 
-- Download the test dataset from [Baidu Driver]() and save it at `./dataset/*`..
+- Download the test dataset from [Baidu Driver](https://pan.baidu.com/s/1lTYWFXvOnAkmH5EdvHgeyQ) (psw: aaw8) and save it at `./dataset/*`.
 
 - Install necessary libraries: `PyTorch 1.1+`, `scipy 1.2.2`, `PIL`
 
