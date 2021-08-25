@@ -10,7 +10,7 @@ Authors:
 [Jianbing Shen](https://scholar.google.com/citations?hl=en&user=_Q3NTToAAAAJ), &
 [Ling Shao](https://scholar.google.com/citations?user=z84rLjoAAAAJ&hl=en&oi=ao)
 
-- This repository provides code for paper "_**Full-Duplex Strategy for Video Object Segmentation**_" accepted by the ICCV-2021 conference ([arXiv Version](https://arxiv.org/abs/2105.08468)). 
+- This repository provides code for paper "_**Full-Duplex Strategy for Video Object Segmentation**_" accepted by the ICCV-2021 conference ([arXiv Version](https://arxiv.org/abs/2108.03151v2)). 
 
 - This project is under construction. If you have any questions about our paper or bugs in our git project, feel free to contact me.
 
