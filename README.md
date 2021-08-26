@@ -94,11 +94,12 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
 > (i.e., threshold=0.5) in our experiments.
 
 
-- Quantitative results:
+- Quantitative results (NOTE: The following results have slight improvement compared with the reported results in our conference paper):
 
     |       | mean-J | recall-J | decay-J | mean-F | recall-F | decay-F | T     |
     |-------|--------|----------|---------|--------|----------|---------|-------|
     | FSNet (w/ CRF) | 0.834  | 0.945    | 0.032   | 0.831  | 0.902    | 0.026   | 0.213 |
+    
 
 - Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/12fvRu-_Ca9qzYJVnmcucKA), psw: ojsl).
 
