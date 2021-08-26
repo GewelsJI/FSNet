@@ -94,7 +94,7 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
 > (i.e., threshold=0.5) in our experiments.
 
 
-- Quantitative results (NOTE: The following results have slight improvement compared with the reported results in our conference paper):
+- Quantitative results (NOTE: The following results **have slight improvement** compared with the reported results in our conference paper):
 
     |       | mean-J | recall-J | decay-J | mean-F | recall-F | decay-F | T     |
     |-------|--------|----------|---------|--------|----------|---------|-------|
