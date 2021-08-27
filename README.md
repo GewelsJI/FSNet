@@ -18,10 +18,10 @@ Authors:
 
 # 1. News
 
-- [2021/08/24] Upload the train script for video object segmentation.
+- [2021/08/24] Upload the training script for video object segmentation.
 - [2021/08/22] Upload the pre-trained snapshot and the pre-computed results on U-VOS and V-SOD tasks. 
 - [2021/08/20] Release inference code, evaluation code (VSOD).
-- [2021/07/20] Create github page.
+- [2021/07/20] Create Github page.
 
 # 2. Introduction
 
@@ -38,7 +38,7 @@ Appearance and motion are two important sources of information in video object s
 
 ## What?
 
-In this paper, we study a novel framework, termed the FSNet (Full-duplex Strategy Network), which designs a relational cross-attention module (RCAM) to achieve the bidirectional message propagation across embedding subspaces. Furthermore, the bidirectional purification module (BPM) is introduced to update the inconsistent features between the spatial-temporal embeddings, effectively improving the model robustness. 
+In this paper, we study a novel framework, termed the FSNet (Full-duplex Strategy Network), which designs a relational cross-attention module (RCAM) to achieve bidirectional message propagation across embedding subspaces. Furthermore, the bidirectional purification module (BPM) is introduced to update the inconsistent features between the spatial-temporal embeddings, effectively improving the model's robustness. 
 
 <p align="center">
     <img src="./assets/framework.jpg" /> <br />
@@ -62,7 +62,7 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 ## How to Inference?
 
-- Download the test dataset from [Baidu Driver](https://pan.baidu.com/s/1lTYWFXvOnAkmH5EdvHgeyQ) (psw: aaw8) and save it at `./dataset/*`.
+- Download the test dataset from [Baidu Driver](https://pan.baidu.com/s/1lTYWFXvOnAkmH5EdvHgeyQ) (PSW: aaw8) and save it at `./dataset/*`.
 
 - Install necessary libraries: `PyTorch 1.1+`, `scipy 1.2.2`, `PIL`
 
@@ -75,7 +75,7 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 ## How to train our model from scratch?
 
-Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQsQJL5clty10DbQ) (psw: u01t) and save it at `./dataset/*`. Our training pipeline consists of three steps:
+Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQsQJL5clty10DbQ) (PSW: u01t) and save it at `./dataset/*`. Our training pipeline consists of three steps:
 
 - First, train the model using the combination of static SOD dataset (i.e., DUTS) with 12,926 samples and U-VOS datasets (i.e., DAVIS16 & FBMS) with 2,373 samples.
     - Set `--train_type='pretrain_rgb'` and run `python train.py` in terminal
@@ -83,7 +83,7 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
 - Second, train the model using the optical-flow map of U-VOS datasets (i.e., DAVIS16 & FBMS).
     - Set `--train_type='pretrain_flow'` and run `python train.py` in terminal
     
-- Third, train the model using the pair of frame and optical-flow of U-VOS datasets (i.e., DAVIS16 & FBMS).
+- Third, train the model using the pair of frame and optical flow of U-VOS datasets (i.e., DAVIS16 & FBMS).
     - Set `--train_type='finetune'` and run `python train.py` in terminal
     
 # 4. Benchmark
@@ -101,7 +101,7 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
     | FSNet (w/ CRF) | 0.834  | 0.945    | 0.032   | 0.831  | 0.902    | 0.026   | 0.213 |
     | FSNet (w/o CRF) | 0.823  | 0.943    | 0.033   | 0.833  | 0.919    | 0.028   | 0.213 |
 
-- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/12fvRu-_Ca9qzYJVnmcucKA), psw: ojsl).
+- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/12fvRu-_Ca9qzYJVnmcucKA), PSW: ojsl).
 
 - Evaluation Toolbox: We use the standard evaluation toolbox from [DAVIS16](https://github.com/davisvideochallenge/davis-matlab/tree/davis-2016). 
   (Note that all the pre-computed segmentations are downloaded from this [link](https://davischallenge.org/davis2016/soa_compare.html)).
@@ -111,11 +111,11 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
 
 > NOTE: In the V-SOD, all the prediction results are non-binary.
 
-- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/1xWvuTIXM6YujhYFaWC9hsQ), psw: rgk1).
+- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/1xWvuTIXM6YujhYFaWC9hsQ), PSW: rgk1).
 
 - Evaluation Toolbox: We use the standard evaluation toolbox from [DAVSOD benchmark](https://github.com/DengPingFan/DAVSOD).
 
-# 4. Ciatation
+# 4. Citation
 
     @inproceedings{ji2021FSNet,
       title={Full-Duplex Strategy for Video Object Segmentation},
@@ -124,7 +124,7 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
       year={2021}
     }
 
-# 5. Acknowledgements
+# 5. Acknowledgments
 
 Many thanks to my collaborator [Ph.D. Zhe Wu](https://scholar.google.com/citations?hl=en&user=jT1s8GkAAAAJ), 
-who provides the excellent work [SCRN](https://github.com/wuzhe71/SCRN) and design inspirations.
+who provides excellent work [SCRN](https://github.com/wuzhe71/SCRN) and design inspirations.
