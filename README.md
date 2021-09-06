@@ -10,7 +10,7 @@ Authors:
 [Jianbing Shen](https://scholar.google.com/citations?hl=en&user=_Q3NTToAAAAJ), &
 [Ling Shao](https://scholar.google.com/citations?user=z84rLjoAAAAJ&hl=en&oi=ao)
 
-- This repository provides code for paper "_**Full-Duplex Strategy for Video Object Segmentation**_" accepted by the ICCV-2021 conference ([arXiv Version](https://arxiv.org/abs/2108.03151v2)). 
+- This repository provides code for paper "_**Full-Duplex Strategy for Video Object Segmentation**_" accepted by the ICCV-2021 conference ([arXiv Version](https://arxiv.org/abs/2108.03151v2) / [中译版本](http://dpfan.net/wp-content/uploads/ICCV2021_VSOD_FSNet_Chinese.pdf)). 
 
 - This project is under construction. If you have any questions about our paper or bugs in our git project, feel free to contact me.
 
@@ -124,7 +124,7 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
       year={2021}
     }
 
-# 5. Acknowledgments
+# 5. Acknowledgements
 
 Many thanks to my collaborator [Ph.D. Zhe Wu](https://scholar.google.com/citations?hl=en&user=jT1s8GkAAAAJ), 
 who provides excellent work [SCRN](https://github.com/wuzhe71/SCRN) and design inspirations.
