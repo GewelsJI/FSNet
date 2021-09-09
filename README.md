@@ -101,7 +101,7 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
     | FSNet (w/ CRF) | 0.834  | 0.945    | 0.032   | 0.831  | 0.902    | 0.026   | 0.213 |
     | FSNet (w/o CRF) | 0.823  | 0.943    | 0.033   | 0.833  | 0.919    | 0.028   | 0.213 |
 
-- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/12fvRu-_Ca9qzYJVnmcucKA), PSW: ojsl or [Google Driver](https://drive.google.com/file/d/1VonyqtDP9JOOWH1CPLnDmfBJQObkC6P6/view?usp=sharing)).
+- Pre-Computed Results: Please download the prediction results of FSNet, refer to [Baidu Driver](https://pan.baidu.com/s/12fvRu-_Ca9qzYJVnmcucKA) (psw: ojsl) or [Google Driver](https://drive.google.com/file/d/1VonyqtDP9JOOWH1CPLnDmfBJQObkC6P6/view?usp=sharing).
 
 - Evaluation Toolbox: We use the standard evaluation toolbox from [DAVIS16](https://github.com/davisvideochallenge/davis-matlab/tree/davis-2016). 
   (Note that all the pre-computed segmentations are downloaded from this [link](https://davischallenge.org/davis2016/soa_compare.html)).
