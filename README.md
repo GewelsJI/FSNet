@@ -62,11 +62,11 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 ## How to Inference?
 
-- Download the test dataset from [Baidu Driver](https://pan.baidu.com/s/1lTYWFXvOnAkmH5EdvHgeyQ) (PSW: aaw8) and save it at `./dataset/*`.
+- Download the test dataset from [Baidu Driver](https://pan.baidu.com/s/1lTYWFXvOnAkmH5EdvHgeyQ) (PSW: aaw8) or [Google Driver](https://drive.google.com/file/d/1ZjJoCy8YVLbDlHZXHTZHx7cdaonePlqp/view?usp=sharing) and save it at `./dataset/*`.
 
 - Install necessary libraries: `PyTorch 1.1+`, `scipy 1.2.2`, `PIL`
 
-- Download the pre-trained weights from [Baidu Driver](https://pan.baidu.com/s/1GRUg-n1EEV_nku-2nG3QRw) (psw: 36lm). 
+- Download the pre-trained weights from [Baidu Driver](https://pan.baidu.com/s/1GRUg-n1EEV_nku-2nG3QRw) (psw: 36lm) or [Google Driver](https://drive.google.com/file/d/1-aBSca-i0-GyMryyEQ5XqrtxIwnTTAvZ/view?usp=sharing). 
   Saving the pre-trained weights at `./snapshot/FSNet/2021-ICCV-FSNet-20epoch-new.pth`
 
 - Just run `python inference.py` to generate the segmentation results. 
@@ -75,7 +75,7 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 ## How to train our model from scratch?
 
-Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQsQJL5clty10DbQ) (PSW: u01t) and save it at `./dataset/*`. Our training pipeline consists of three steps:
+Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQsQJL5clty10DbQ) (PSW: u01t) or [Google Driver Set1](https://drive.google.com/file/d/1EudIbFCOA7h8JXraFJkVAp6Q3RJsr6O_/view?usp=sharing)/[Google Driver Set2](https://drive.google.com/file/d/1Xppp0RrUuIUFAx1JlGb-Y7BXdWQFSMyi/view?usp=sharing) and save it at `./dataset/*`. Our training pipeline consists of three steps:
 
 - First, train the model using the combination of static SOD dataset (i.e., DUTS) with 12,926 samples and U-VOS datasets (i.e., DAVIS16 & FBMS) with 2,373 samples.
     - Set `--train_type='pretrain_rgb'` and run `python train.py` in terminal
@@ -101,7 +101,7 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
     | FSNet (w/ CRF) | 0.834  | 0.945    | 0.032   | 0.831  | 0.902    | 0.026   | 0.213 |
     | FSNet (w/o CRF) | 0.823  | 0.943    | 0.033   | 0.833  | 0.919    | 0.028   | 0.213 |
 
-- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/12fvRu-_Ca9qzYJVnmcucKA), PSW: ojsl).
+- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/12fvRu-_Ca9qzYJVnmcucKA), PSW: ojsl or [Google Driver](https://drive.google.com/file/d/1VonyqtDP9JOOWH1CPLnDmfBJQObkC6P6/view?usp=sharing)).
 
 - Evaluation Toolbox: We use the standard evaluation toolbox from [DAVIS16](https://github.com/davisvideochallenge/davis-matlab/tree/davis-2016). 
   (Note that all the pre-computed segmentations are downloaded from this [link](https://davischallenge.org/davis2016/soa_compare.html)).
@@ -111,7 +111,7 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
 
 > NOTE: In the V-SOD, all the prediction results are non-binary.
 
-- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/1xWvuTIXM6YujhYFaWC9hsQ), PSW: rgk1).
+- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/1xWvuTIXM6YujhYFaWC9hsQ), PSW: rgk1) or [Google Driver](https://drive.google.com/file/d/1O9UzMEDqwTRMBLuX82LJ3dUPPITkvIYQ/view?usp=sharing).
 
 - Evaluation Toolbox: We use the standard evaluation toolbox from [DAVSOD benchmark](https://github.com/DengPingFan/DAVSOD).
 
