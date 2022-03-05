@@ -18,6 +18,7 @@ Authors:
 
 # 1. News
 
+- [2021/10/16] Our journal extension is accepted by [Computational Visual Media](https://www.springer.com/journal/41095).
 - [2021/08/24] Upload the training script for video object segmentation.
 - [2021/08/22] Upload the pre-trained snapshot and the pre-computed results on U-VOS and V-SOD tasks. 
 - [2021/08/20] Release inference code, evaluation code (VSOD).
@@ -122,6 +123,15 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
       author={Ji, Ge-Peng and Fu, Keren and Wu, Zhe and Fan, Deng-Ping and Shen, Jianbing and Shao, Ling},
       booktitle={IEEE ICCV},
       year={2021}
+    }
+    
+    @article{ji2022fsnet-CVMJ,
+      title={Full-Duplex Strategy for Video Object Segmentation},
+      author={Ji, Ge-Peng and Fan, Deng-Ping and Fu, Keren and Wu, Zhe and Shen, Jianbing and Shao, Ling},
+      booktitle={Computational Visual Media},
+      volume={8},
+      year={2022},
+      publisher={Springer}
     }
 
 # 5. Acknowledgements
