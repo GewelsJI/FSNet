@@ -18,3 +18,6 @@ bin-release/
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
 *.xml
+
+/snapshot/FSNet/2021-ICCV-FSNet-20epoch-new.pth
+/.idea/
