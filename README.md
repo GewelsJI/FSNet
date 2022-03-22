@@ -118,13 +118,6 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
 
 # 4. Citation
 
-    @inproceedings{ji2021FSNet,
-      title={Full-Duplex Strategy for Video Object Segmentation},
-      author={Ji, Ge-Peng and Fu, Keren and Wu, Zhe and Fan, Deng-Ping and Shen, Jianbing and Shao, Ling},
-      booktitle={IEEE ICCV},
-      year={2021}
-    }
-    
     @article{ji2022fsnet-CVMJ,
       title={Full-Duplex Strategy for Video Object Segmentation},
       author={Ji, Ge-Peng and Fan, Deng-Ping and Fu, Keren and Wu, Zhe and Shen, Jianbing and Shao, Ling},
@@ -132,6 +125,13 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
       volume={8},
       year={2022},
       publisher={Springer}
+    }
+
+    @inproceedings{ji2021FSNet,
+      title={Full-Duplex Strategy for Video Object Segmentation},
+      author={Ji, Ge-Peng and Fu, Keren and Wu, Zhe and Fan, Deng-Ping and Shen, Jianbing and Shao, Ling},
+      booktitle={IEEE ICCV},
+      year={2021}
     }
 
 # 5. Acknowledgements
