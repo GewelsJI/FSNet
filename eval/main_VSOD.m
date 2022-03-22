@@ -96,14 +96,13 @@ for  m = 1:length(Models)
                 Bi_sal(sal>threshold) = 1;
                 adpEmeasure(i) = Enhancedmeasure(Bi_sal, gt);
                 
-%                 for t = 1:length(Thresholds)
-%             
-%                     threshold = Thresholds(t);
-%                     [~, ~, threshold_Fmeasure(i-1,t)] = Fmeasure_calu(sal, double(gt), size(gt), threshold);
-%                     Bi_sal = zeros(size(sal));
-%                     Bi_sal(sal>threshold) = 1;
-%                     threshold_Emeasure(i-1,t) = Enhancedmeasure(Bi_sal, gt);
-%                 end
+                for t = 1:length(Thresholds)           
+                    threshold = Thresholds(t);
+                    [~, ~, threshold_Fmeasure(i-1,t)] = Fmeasure_calu(sal, double(gt), size(gt), threshold);
+                    Bi_sal = zeros(size(sal));
+                    Bi_sal(sal>threshold) = 1;
+                    threshold_Emeasure(i-1,t) = Enhancedmeasure(Bi_sal, gt);
+                end
                 
             end
             toc;
