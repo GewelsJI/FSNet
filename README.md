@@ -18,7 +18,7 @@ Authors:
 
 # 1. News
 
-- [2021/10/16] Our journal extension is accepted by [Computational Visual Media](https://www.springer.com/journal/41095).
+- [2021/10/16] Our journal extension is accepted by [Computational Visual Media](https://www.springer.com/journal/41095). The pre-print version could be found at this [link](https://cg.cs.tsinghua.edu.cn/cvmj/papers/CVM0262.pdf).
 - [2021/08/24] Upload the training script for video object segmentation.
 - [2021/08/22] Upload the pre-trained snapshot and the pre-computed results on U-VOS and V-SOD tasks. 
 - [2021/08/20] Release inference code, evaluation code (VSOD).
