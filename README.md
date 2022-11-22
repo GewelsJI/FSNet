@@ -129,13 +129,12 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
       year={2022},
       publisher={Springer}
     }
-
-    @inproceedings{ji2021FSNet,
+    
+    @inproceedings{ji2021full,
       title={Full-Duplex Strategy for Video Object Segmentation},
       author={Ji, Ge-Peng and Fu, Keren and Wu, Zhe and Fan, Deng-Ping and Shen, Jianbing and Shao, Ling},
-      booktitle={IEEE ICCV},
-      pages={4902-4913},  
-      doi={10.1109/ICCV48922.2021.00488},
+      booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+      pages={4922--4933},
       year={2021}
     }
 
