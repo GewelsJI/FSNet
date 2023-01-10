@@ -122,7 +122,7 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
     @article{ji2022fsnet-CVMJ,
       title={Full-Duplex Strategy for Video Object Segmentation},
       author={Ji, Ge-Peng and Fan, Deng-Ping and Fu, Keren and Wu, Zhe and Shen, Jianbing and Shao, Ling},
-      booktitle={Computational Visual Media},
+      journal={Computational Visual Media},
       pages={155–175},
       volume={8},
       issue={1},
