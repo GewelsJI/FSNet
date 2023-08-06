@@ -10,7 +10,7 @@ Authors:
 [Jianbing Shen](https://scholar.google.com/citations?hl=en&user=_Q3NTToAAAAJ), &
 [Ling Shao](https://scholar.google.com/citations?user=z84rLjoAAAAJ&hl=en&oi=ao)
 
-- This repository provides code for paper "_**Full-Duplex Strategy for Video Object Segmentation**_" accepted by the ICCV-2021 conference ([official version](https://openaccess.thecvf.com/content/ICCV2021/html/Ji_Full-Duplex_Strategy_for_Video_Object_Segmentation_ICCV_2021_paper.html) / [arXiv Version](https://arxiv.org/abs/2108.03151v2) / [Chinese translation](http://dpfan.net/wp-content/uploads/ICCV2021_VSOD_FSNet_Chinese.pdf)). 
+- This repository provides code for paper "_**Full-Duplex Strategy for Video Object Segmentation**_" accepted by the ICCV-2021 conference ([official version](https://openaccess.thecvf.com/content/ICCV2021/html/Ji_Full-Duplex_Strategy_for_Video_Object_Segmentation_ICCV_2021_paper.html) / [arXiv Version](https://arxiv.org/abs/2108.03151v2) / [Chinese translation](https://drive.google.com/file/d/1P4v_d_jOjG--FCDkxTY0wDl113evj27W/view?usp=sharing)). 
 
 - This project is under construction. If you have any questions about our paper or bugs in our git project, feel free to contact me.
 
@@ -68,7 +68,7 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 - Install necessary libraries: `PyTorch 1.1+`, `scipy 1.2.2`, `PIL`
 
-- Download the pre-trained weights from [Baidu Driver](https://pan.baidu.com/s/1GRUg-n1EEV_nku-2nG3QRw) (psw: 36lm) or [Google Driver](https://drive.google.com/file/d/1-aBSca-i0-GyMryyEQ5XqrtxIwnTTAvZ/view?usp=sharing). 
+- Download the pre-trained weights from [Baidu Driver](https://pan.baidu.com/s/1GRUg-n1EEV_nku-2nG3QRw) (psw: 36lm) or [Google Driver](https://drive.google.com/file/d/1rXSG2ruiw1pzUJN-m8BJAfEcjxheYe0D/view?usp=sharing). 
   Saving the pre-trained weights at `./snapshot/FSNet/2021-ICCV-FSNet-20epoch-new.pth`
 
 - Just run `python inference.py` to generate the segmentation results. 
@@ -77,7 +77,7 @@ By considering the mutual restraint within the full-duplex strategy, our FSNet p
 
 ## How to train our model from scratch?
 
-Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQsQJL5clty10DbQ) (PSW: u01t) or [Google Driver Set1](https://drive.google.com/file/d/1EudIbFCOA7h8JXraFJkVAp6Q3RJsr6O_/view?usp=sharing)/[Google Driver Set2](https://drive.google.com/file/d/1Xppp0RrUuIUFAx1JlGb-Y7BXdWQFSMyi/view?usp=sharing) and save it at `./dataset/*`. Our training pipeline consists of three steps:
+Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQsQJL5clty10DbQ) (PSW: u01t) or [Google Driver (VOS-TrainSet_StaticAndVideo.zip)](https://drive.google.com/file/d/1NKjAwqbd6nd1SrlgCB3C1UP5dhouSeIF/view?usp=sharing)/[Google Driver (VOS-TrainSet_Video.zip)](https://drive.google.com/file/d/1aoneB-wbnATRHV8OVcjNd5zBlGOxftQv/view?usp=sharing) and save it at `./dataset/*`. Our training pipeline consists of three steps:
 
 - First, train the model using the combination of static SOD dataset (i.e., DUTS) with 12,926 samples and U-VOS datasets (i.e., DAVIS16 & FBMS) with 2,373 samples.
     - Set `--train_type='pretrain_rgb'` and run `python train.py` in terminal
@@ -103,7 +103,7 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
     | FSNet (w/ CRF) | 0.834  | 0.945    | 0.032   | 0.831  | 0.902    | 0.026   | 0.213 |
     | FSNet (w/o CRF) | 0.823  | 0.943    | 0.033   | 0.833  | 0.919    | 0.028   | 0.213 |
 
-- Pre-Computed Results: Please download the prediction results of FSNet, refer to [Baidu Driver](https://pan.baidu.com/s/12fvRu-_Ca9qzYJVnmcucKA) (psw: ojsl) or [Google Driver](https://drive.google.com/file/d/1VonyqtDP9JOOWH1CPLnDmfBJQObkC6P6/view?usp=sharing).
+- Pre-Computed Results: Please download the prediction results of FSNet, refer to [Baidu Driver](https://pan.baidu.com/s/12fvRu-_Ca9qzYJVnmcucKA) (psw: ojsl) or [Google Driver](https://drive.google.com/file/d/1p3CGVyHuHfrCi6xaNtUdbrFa08H4Uj-b/view?usp=sharing).
 
 - Evaluation Toolbox: We use the standard evaluation toolbox from [DAVIS16](https://github.com/davisvideochallenge/davis-matlab/tree/davis-2016). 
   (Note that all the pre-computed segmentations are downloaded from this [link](https://davischallenge.org/davis2016/soa_compare.html)).
@@ -113,7 +113,7 @@ Download the train dataset from [Baidu Driver](https://pan.baidu.com/s/12l1VVZqQ
 
 > NOTE: In the V-SOD, all the prediction results are non-binary.
 
-- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/1xWvuTIXM6YujhYFaWC9hsQ), PSW: rgk1) or [Google Driver](https://drive.google.com/file/d/1O9UzMEDqwTRMBLuX82LJ3dUPPITkvIYQ/view?usp=sharing).
+- Pre-Computed Results: Please download the prediction results of FSNet ([Baidu Driver](https://pan.baidu.com/s/1xWvuTIXM6YujhYFaWC9hsQ), PSW: rgk1) or [Google Driver](https://drive.google.com/file/d/1gScv9xmFRN6hX0ZehDMXhwtm6oNobkke/view?usp=sharing).
 
 - Evaluation Toolbox: We use the standard evaluation toolbox from [DAVSOD benchmark](https://github.com/DengPingFan/DAVSOD).
 
